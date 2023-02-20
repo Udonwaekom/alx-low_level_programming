@@ -4,6 +4,7 @@
 
 /**
  * main - sting last digit
+ *
  * Return: 0
  */
 int main(void)
