@@ -6,14 +6,10 @@
  */
 int main(void)
 {
-	char bn;
+	char bn = 'a';
 
-	for
-		(bn = 'a';
-		bn <= 'z';
-		bn++);
-	{
+	for (bn = 'a'; bn <= 'z'; bn++)
 		putchar(bn);
-	}
-	putchar('\n');
+
 	return (0);
+}
