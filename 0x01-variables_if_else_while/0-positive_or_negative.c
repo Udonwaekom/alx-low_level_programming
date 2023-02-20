@@ -4,6 +4,7 @@
 
 /**
  * main - check if numbr is neg or pos
+ *
  * Return: 0
  */
 int main(void)
@@ -22,7 +23,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	printf("exact value of n is: %d\n", n);
-
 	return (0);
 }
