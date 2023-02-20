@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - the alphabet game
- * Return: 0
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char bn = 'a';
+	char ch;
 
-	for (bn = 'a'; bn <= 'z'; bn++)
-		putchar(bn);
-
-	putchar('\n')
-
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 	return (0);
 }
