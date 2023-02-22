@@ -2,25 +2,22 @@
 
 /**
  * main - prints lphabets 10x
- * Return: 0
  */
 void print_alphabet_x10(void);
 {
 char (ch);
-char (bn);
-ch = '0';
+int i;
+i = 0;
 
-while (ch <= 10)
+while ( < 10)
 {
-bn = 'a';
-while (bn <= 'z')
+ch = 'a';
+while (ch <= 'z')
 {
-_putchar(bn);
-bn++
+_putchar(ch);
+ch++
 }
 _putchar('\n');
-ch++;
+i++;
 }
-
-return (0);
 }
