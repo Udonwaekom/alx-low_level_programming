@@ -1,15 +1,14 @@
-
 #include "main.h"
 /**
- * _islower -This program check
- * if a character is a lowercase
- * letter from the English alphabet
+ * _isalpha - this program checks wether a character
+ * is from the English alphabet.
  * @c: input parameter
- *Return: 1 for lowercase, 0 if it's not lowercase
-*/
-int _islower(int c)
+ * Return: 1 for English Character
+ * 0 if the character is not English
+ */
+int _isalpha(int c)
 {
-if (c >= 'a' && c <= 'z')
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
 else
 return (0);
