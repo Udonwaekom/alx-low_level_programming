@@ -1,21 +1,15 @@
 #include "main.h"
 /**
- * jack_bauer - prints time table in this format: HH:MM
- * Return: the sum of two numbers.
+ * print_last_digit - prints the last digit of a numer.
+ * @n: parameter.
+ * Return:last digit.
  */
-void jack_bauer(void)
+int print_last_digit(int n)
 {
-int h, m;
-for (h = 0; h < 24; h++)
-{
-for (m = 0; m < 60; m++)
-{
-_putchar((h / 10) + '0');
-_putchar((h % 10) + '0');
-_putchar(':');
-_putchar((m / 10) + '0');
-_putchar((m % 10) + '0');
-_putchar('\n');
+int x;
+x = n % 10;
+if (x < 0)
+x = x * (-1);
+_putchar(x + '0');
+return (x);
 }
-}
-
