@@ -1,5 +1,3 @@
-ines (19 sloc)  397 Bytes
-
 #include"main.h"
 
 /**
@@ -12,14 +10,19 @@ ines (19 sloc)  397 Bytes
 
 void print_rev(char *s)
 {
-	int index;
+	int longi = 0;
+	int o;
 
-	/*finds the length of string without null character*/
-	for (index = 0; s[index] != '\0'; ++index)
-		;
-
-	/*print char from the last index as you decrement*/
-	for (--index; index >= 0; --index)
-		_putchar(s[index]);
+	while (*s != '\0')
+	{
+		longi++;
+		s++
+	}
+	s--
+	for (o = longi; o > 0; o--)
+	{
+		_putchar(*s);
+		s--
+	}
 	_putchar('\n');
 }
